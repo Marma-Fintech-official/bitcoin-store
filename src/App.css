@@ -1,0 +1,66 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url("fonts/binxchr.ttf");
+}
+
+html,
+body {
+  font-family: myFirstFont !important;
+}
+h1 {
+  letter-spacing: 5px;
+  margin: 25px !important;
+}
+#bitcoin {
+  /* padding-top:80px; */
+  /* width:200px; */
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-family: myFirstFont !important;
+  align-items: center;
+  background-color: #fd940a;
+  background-image: radial-gradient(
+    circle,
+    #f9a72b 0%,
+    #fa9026 70%,
+    #fb6c1f 100%
+  );
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.path {
+  stroke-dasharray: 2110;
+  stroke-dashoffset: 2110;
+  stroke-width: 5;
+  stroke-linecap: round;
+  animation: dash 6s linear infinite;
+  fill-opacity: 0;
+  stroke: orange;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 2110;
+    opacity: 0;
+    stroke: #fff;
+  }
+  15% {
+    opacity: 1;
+    stroke: #fff;
+  }
+  70% {
+    opacity: 1;
+    stroke: #fff;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+    stroke: #fff;
+  }
+}
